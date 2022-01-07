@@ -3,17 +3,17 @@ import Swal from 'sweetalert2'
 import { OK, server, key } from '../../constants'
 import { httpClient } from '../../utils/HttpClient'
 import WeightGauge from '../weightGauge'
-<<<<<<< HEAD
+
 import './weightDeviceDetail.css'
 // import PrintButton from './printButton'
 import ComponentToPrint from './componentToPrint'
 import ReactToPrint, { PrintContextConsumer } from "react-to-print";
 import './weightDeviceDetail.css'
-=======
+
 import QRCode from 'qrcode.react';
 import './weightDeviceDetail.css'
 import PrintButton from './printButton'
->>>>>>> f646ad27af57caa9c44566e3a298f1d68ed2e136
+
 
 export default function WeightDeviceDetail(props) {
   const [device_id, setdevice_id] = useState(null)
@@ -27,10 +27,8 @@ export default function WeightDeviceDetail(props) {
   const [modelDetail, setmodelDetail] = useState(null)
 
   const [decimalDigit, setdecimalDigit] = useState(4)
-<<<<<<< HEAD
+
   const [count, setcount] = useState(0)
-=======
->>>>>>> f646ad27af57caa9c44566e3a298f1d68ed2e136
 
   useEffect(() => {
     doGetWeightScaleDeviceMaster(props.match.params.device_id)
@@ -82,7 +80,7 @@ export default function WeightDeviceDetail(props) {
       ))
     }
   }
-<<<<<<< HEAD
+
   const componentRef = useRef();
 
   const printButton = (data_print) => {
@@ -109,8 +107,6 @@ export default function WeightDeviceDetail(props) {
 
     )
   }
-=======
->>>>>>> f646ad27af57caa9c44566e3a298f1d68ed2e136
 
   const renderWeightModeldetails = () => {
     if (modelDetail != null) {
@@ -168,16 +164,16 @@ export default function WeightDeviceDetail(props) {
           modelDetail,
           weight,
         }
-<<<<<<< HEAD
+
         // return <PrintButton data={data} />
         return (
           <>
             {printButton(data)}
           </>
         )
-=======
+
         return <PrintButton data={data} />
->>>>>>> f646ad27af57caa9c44566e3a298f1d68ed2e136
+
       }
       // const data = {
       //   device_id,

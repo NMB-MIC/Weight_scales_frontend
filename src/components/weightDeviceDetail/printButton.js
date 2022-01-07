@@ -10,15 +10,15 @@ export default class printButton extends Component {
                 <ReactToPrint content={() => this.componentRef}>
                     <PrintContextConsumer>
                         {({ handlePrint }) => (
-<<<<<<< HEAD
                             <div onClick={() => {
                                 // window.location.reload()
                                 handlePrint()
                             }} className="card-header btn btn-primary btn-block">
-=======
-                            <div onClick={handlePrint} className="card-header btn btn-primary btn-block">
->>>>>>> f646ad27af57caa9c44566e3a298f1d68ed2e136
-                                <b>Print this out!</b>
+
+                                <div onClick={handlePrint} className="card-header btn btn-primary btn-block">
+
+                                    <b>Print this out!</b>
+                                </div>
                             </div>
                         )}
                     </PrintContextConsumer>

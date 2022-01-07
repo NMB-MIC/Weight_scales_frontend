@@ -69,7 +69,7 @@ class SideMenu extends Component {
     }
   }
 
-<<<<<<< HEAD
+
   renderVerify = (pathname) => {
     return (
       <li className="nav-item has-treeview">
@@ -105,8 +105,6 @@ class SideMenu extends Component {
     )
   }
 
-=======
->>>>>>> f646ad27af57caa9c44566e3a298f1d68ed2e136
   render() {
     const { pathname } = this.props.location;
 
@@ -130,10 +128,8 @@ class SideMenu extends Component {
 
                 <ul className="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                   {this.renderMasters(pathname)}
-<<<<<<< HEAD
+
                   {this.renderVerify(pathname)}
-=======
->>>>>>> f646ad27af57caa9c44566e3a298f1d68ed2e136
                 </ul>
               </nav>
               {/* /.sidebar-menu */}
