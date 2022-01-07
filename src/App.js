@@ -17,9 +17,12 @@ import model_calibration from './components/master/model_calibration'
 //weight details
 import WeightDeviceDetail from './components/weightDeviceDetail'
 
+<<<<<<< HEAD
 //verify
 import VerifyFunction from './components/verifyFunction'
 
+=======
+>>>>>>> f646ad27af57caa9c44566e3a298f1d68ed2e136
 import {
   BrowserRouter as Router,
   Route,
@@ -106,7 +109,10 @@ class App extends Component {
           <SecuredLVRoute path="/master/weight_calculation/:model" component={model_calibration}/>
 
           <SecuredRoute path="/weightDeviceDetail/:device_id" component={WeightDeviceDetail} />
+<<<<<<< HEAD
           <Route path="/VerifyFunction" component={VerifyFunction} />
+=======
+>>>>>>> f646ad27af57caa9c44566e3a298f1d68ed2e136
           
           <Route exact={true} path="/" component={this.redirectToLogin} />
           <Route exact={true} path="*" component={this.redirectToLogin} />
