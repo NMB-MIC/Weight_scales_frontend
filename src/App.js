@@ -17,9 +17,9 @@ import model_calibration from './components/master/model_calibration'
 //weight details
 import WeightDeviceDetail from './components/weightDeviceDetail'
 
-//verify
+//verify 
 import VerifyFunction from './components/verifyFunction'
-
+ 
 import {
   BrowserRouter as Router,
   Route,
@@ -45,7 +45,7 @@ const isPowerUser = () => {
     return false;
   }
 };
-
+ 
 // Protected Route
 const SecuredRoute = ({ component: Component, ...rest }) => (
   <Route
